@@ -125,6 +125,14 @@ h1, h2, h3, h4, h5, h6 {
 .logo {
     width: 60px;
     height: auto;
+    mix-blend-mode: screen;
+    filter: drop-shadow(0 0 5px #d4af374d);
+}
+
+/* Accessibility Focus States */
+a:focus-visible, button:focus-visible, .btn:focus-visible, input:focus-visible {
+    outline: 2px dashed var(--primary-color);
+    outline-offset: 4px;
 }
 
 .brand-name {
